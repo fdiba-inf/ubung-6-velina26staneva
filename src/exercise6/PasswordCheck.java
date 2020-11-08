@@ -8,7 +8,16 @@ public class PasswordCheck {
 
         System.out.print("Geben Sie einen Passwort ein: ");
         int number = input.nextInt();
-        int numberlength = String.valueOf(number).length();
+        int count = 0;
+
+
+        while(number>0){
+          number=number%10;
+           count++;
+           number=number/10;
+           }
+           int numberlength=count;
+
 
         boolean check1;
         boolean check2;
